@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<style>
+    body {
+        margin: 0;
+        padding-top: 60px;
+        background-color: rgb(26, 26, 26);
+    }
+
+    .viewport-size {
+        height: 100vh;
+    }
+
+    #welcome-section {}
+
+    .navbar-image {
+        margin-top: 10px;
+        max-width: 30px;
+        max-height: 30px;
+        padding-right: 10px;
+        transition: transform .2s;
+    }
+
+    .navbar-image:hover {
+        transform: scale(1.2);
+    }
+
+    .description {
+        align-self: center;
+        text-align: center;
+        margin: auto;
+        height: 100%;
+        padding-top: 28vh;
+    }
+
+    .projects {
+        align-self: center;
+        text-align: center;
+        margin: auto;
+        background-color: rgb(51, 102, 255);
+        height: 100vh;
+        padding-top: 10px;
+    }
+
+    .minski-text {
+        color: white;
+
+    }
+
+    .role-text {
+        color: rgb(204, 204, 0);
+        box-shadow: yellowgreen;
+    }
+
+    .project-title {
+        margin: auto;
+        width: 42%;
+        border-bottom: 3px solid #dfdfdf;
+    }
+
+    @media (min-width: 768px) {
+        .cards-container {
+            padding-top: 20px;
+            width: 100%;
+            height: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "first second third"
+                "fourth fifth sixth";
+            grid-gap: 10px;
+
+        }
+    }
+
+    .card {
+        margin: auto;
+        margin-top: 40px;
+        background-color: rgb(26, 26, 26);
+        width: 80%;
+        height: 100%;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .card-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-title {
+        color: rgb(26, 26, 26);
+    }
+
+    .cards-container :hover h3 {
+        animation-name: name-animation;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #none {
+        color: rgb(26, 26, 26);
+        text-decoration: none;
+    }
+
+    #contacts {
+        text-align: center;
+        color: rgb(204, 204, 0);
+    }
+
+
+
+    @keyframes name-animation {
+        from {
+            color: rgb(26, 26, 26);
+        }
+
+        to {
+            color: rgb(204, 204, 0);
+        }
+    }
+</style>
+
+<html>
+
+<head>
+    <title>Matheus Minski</title>
+
+</head>
+
+
+<body>
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(255, 255, 0, 0.89); border: 0px;">
+        <div class="container nav-text">
+            <div class="nav navbar-nav navbar-left">
+                <a href="#contacts" id="none">
+                    <h3 style="color: black;">Lets Work!</h3>
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="profile-link" class="navbar-brand" target="_blank" href="https://github.com/MatheusMinski"
+                        style="margin: 0; padding: 0;"><img class="navbar-image" alt="Brand" src="github.png"></a></li>
+                <li><a class="navbar-brand" target="_blank"
+                        href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8328639Z9&tokenCaptchar=03AOLTBLQYG-aqxv6nFUCLx81WJeHTomvNyc-BgIM8iH-O9RGDSjc5OQh-KGT4PP-d078XccYVnp9bepRzPoHmEr44w0MnVLb14w-VaZR96DAoEPYtdHz3mhdlURcj8c-yQ0gmWNgF7G0_wh_fAymj-K1rGdQM-OTouI_mbcD00g5TGT53MTFt-klsC9C6sH9EFRxiZJLwnPreTSSkfaDzpsZ3RsLEv2sP7dqivvJuT7jJJT5mkefdnRH6HXYYIThgkgQ05Yz38y1ly4UVbMd9sSsrf8cL98XA2Xed7UGkYDc0RN6svA8_fCrgjabNtNQ-IZe-auvs2VTkLfcg-my04mwmZ_run61-sHeql1mMy1ehYeBfgo9vI6S_d5IgnMRM6CSDokGrUuFnpAK4tcPCJOvOa-FSGBXb1pLxW8dcRbThCACY8N_vMMir2e0uibSbCA0hyHlklsCx"
+                        style="margin: 0; padding: 0;"><img class="navbar-image" alt="Brand" src="cnpq.png"></a></li>
+                <li><a class="navbar-brand" target="_blank"
+                        href="https://www.linkedin.com/in/matheus-minski-dos-santos-7a9058176/"
+                        style="margin: 0; padding: 0;"><img class="navbar-image" alt="Brand" src="in.png"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="viewport-size" id="welcome-section">
+        <div class="description">
+            <h1 class="minski-text">Hey, i'm Minski!</h1>
+            <h3 class="role-text">A Computer Science Student and web developer</h3>
+        </div>
+
+    </section>
+
+    <section class="viewport-size" id="projects">
+        <div class="projects">
+            <div class="project-tile">
+                <h1 class="minski-text"><b>These are some of my projects</b></h1>
+            </div>
+            <div class="cards-container">
+                <div class="card" style="grid-area: first;">
+                    <div class="card-body">
+                        <a id="none" href="https://github.com/MatheusMinski/C" target="_blank">
+                            <div><img class="card-img-top card-image project-image" src="ImagensProjetos/C.png"
+                                    width="360" height="300" alt="Card image cap">
+                            </div>
+                            <div>
+                                <h2 style="display: inline; color: rgb(204, 204, 0);">*</h2>
+                                <h3 style="display: inline;" class="card-title">Some C Projects</h3>
+                                <h2 style="display: inline; color: rgb(204, 204, 0);">;</h2>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="card" style="grid-area: second;">
+
+                    <div class="card-body">
+                        <a id="none" href="https://github.com/MatheusMinski/JogoDaVelhaJava" target="_blank">
+                            <div><img class="card-img-top card-image" src="ImagensProjetos/jogodavelha.png" width="360"
+                                    height="300" alt="Card image cap">
+                            </div>
+                            <div>
+                                <h3 style="display: inline;" class="card-title">Tic Tac Toe game in Java</h3>
+                                <h2 style="display: inline; color: rgb(204, 204, 0);">;</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card" style="grid-area: third;">
+
+                    <div class="card-body">
+                        <a id="none" href="https://github.com/MatheusMinski/ClinicaEDF" target="_blank">
+                            <div><img class="card-img-top card-image" src="ImagensProjetos/ecaeef.png" width="360"
+                                    height="300" alt="Card image cap">
+                            </div>
+                            <div>
+                                <h2 style="display: inline; color: rgb(204, 204, 0);">$</h2>
+                                <h3 style="display: inline;" class="card-title">Laravel and Materialize site</h3>
+                                <h2 style="display: inline; color: rgb(204, 204, 0);">;</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </section>
+    <div id="contacts">
+        <h1>
+            Contact:
+        </h1>
+
+        <h1>
+            Email: mminski57@gmail.com
+        </h1>
+    </div>
+
+</body>
+
+</html>

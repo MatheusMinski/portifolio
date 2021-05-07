@@ -1,0 +1,260 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+
+<style>
+    html .page {
+        overflow: visible;
+    }
+
+    #nav-bar {
+        z-index: 1;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(187, 188, 250);
+        overflow: hidden;
+        height: 100px;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+
+    @media screen and (min-width: 480px) {
+        body {
+            background-color: lightgreen;
+        }
+    }
+
+    #nav-bar a,
+    p {
+        float: left;
+        color: #000120;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 17px;
+        display: stretch;
+
+    }
+
+    #nav-bar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    #header-img {
+        border-radius: 50%;
+        width: 150px;
+    }
+
+    #nav-link {
+        margin: auto;
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .vertical-center {
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .center {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .center p {
+        text-align: center;
+        margin: auto;
+    }
+
+    body {
+        background-color: rgb(187, 188, 250);
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .prices {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+        width: 60%;
+        height: 250px;
+
+    }
+
+    .price-cards {
+        height: 100%;
+        box-shadow: 0px 0px 20px 10px rgba(82, 98, 240, 0.75);
+        padding: 0;
+        width: 30%;
+    }
+
+    .price-head {
+        background-color: rgba(82, 98, 240, 0.75);
+        padding: 5px;
+
+    }
+
+    input {
+        width: 30%;
+        margin: auto;
+    }
+
+    #main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+
+    }
+</style>
+
+<html>
+
+<head>
+    <title>Glasses to Unsee</title>
+
+</head>
+
+<body>
+    <div id="main">
+        <header id="header">
+            <nav id="nav-bar">
+                <div>
+                    <img id="header-img" src="cao.jpg">
+                </div>
+                <div class="vertical-center">
+                    <p>Best Glasses to unsee <br> anything you want</p>
+                </div>
+                <div>
+                    <a class="nav-link" href="#how-it-works">How it works?</a>
+                </div>
+                <div>
+                    <a class="nav-link" href="#is-it-safe">Is it safe?</a>
+                </div>
+                <div>
+                    <a class="nav-link" href="#pricing">Prices</a>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            <label id="into-label">
+                <div class="center">
+                    <h2>
+                        A glass make to make your life easier!
+                    </h2>
+                    <h3 id="how-it-works">
+                        How it works?
+                    </h3>
+                    <h4>When you use this glasses, everthing that is showed up to you is stored in the glasses memory,
+                        so in
+                        the
+                        time you take it off, all goes away.
+                        <br>You don't need to charge this produt, but it needs some time to heal its traumas</h4>
+
+                    <h3 id="is-it-safe">
+                        Is it safe?
+                    </h3>
+                    <h4>Yes! Just remember to don't do anything important with them on.</h4>
+                </div>
+            </label>
+
+            <label id="pricing">
+                <div class="center" style="margin-top: 50px;">
+                    <h2>Prices</h2>
+                </div>
+                <div class="prices">
+                    <div class="price-cards">
+                        <div class="price-head">
+                            <h4>Glasses for school</h4>
+                        </div>
+                        <div>
+                            <h3>$200</h3>
+                        </div>
+                        <div style="text-align: left;">
+                            <ul>
+                                <li><span>Least resilient</span></li>
+                                <li><span>To much time to heal</span></li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 55px;">
+                            <button>Select</button>
+                        </div>
+
+                    </div>
+                    <div class="price-cards">
+                        <div class="price-head">
+                            <h4>Glasses for College</h4>
+                        </div>
+                        <div>
+                            <h3>$400</h3>
+                        </div>
+                        <div style="text-align: left;">
+                            <ul>
+                                <li><span>Little bit more resilient</span></li>
+                                <li><span>Deals good with the time</span></li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 55px;">
+                            <button>Select</button>
+                        </div>
+
+                    </div>
+                    <div class="price-cards">
+                        <div class="price-head">
+                            <h4>Glasses for Univerity</h4>
+                        </div>
+                        <div>
+                            <h3>$600</h3>
+                        </div>
+                        <div style="text-align: left;">
+                            <ul>
+                                <li><span>Toughest one</span></li>
+                                <li><span>No time for nothing</span></li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 55px;">
+                            <button>Select</button>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <div class="center" style="margin-top: 30px;">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <div>
+                        <h3>Get yours now!<h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input id="email" name="email" required type="email" target="_blank"
+                            placeholder="Enter your email">
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="submit" id="submit">
+                    </div>
+                </form>
+
+                <div>
+                    <h2>I don't have a video for this product, but some music is always good</h2>
+                </div>
+                <div>
+                    <iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/J---aiyznGQ">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
